@@ -18,21 +18,5 @@ class ShowController extends Controller
     }
 
 
-    // Show a specific user by ID
-    public function show($id)
-    {
-        $user = User::find($id);
-
-        if (!$user) {
-            return response()->json([
-                'status' => 'error',
-                'message' => 'User not found'
-            ], 404);
-        }
-
-        return response()->json([
-            'status' => 'success',
-            'data' => $user
-        ]);
-    }
+   
 }

@@ -23,3 +23,4 @@ use App\Http\Controllers\Api\ShowController;
 
 Route::get('/users', [ShowController::class, 'index']);
 Route::get('/users/{id}', [ShowController::class, 'show']);
+
